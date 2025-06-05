@@ -121,7 +121,7 @@
         <!--Edit Bio View Controller-->
         <scene sceneID="8bv-96-Uxb">
             <objects>
-                <viewController id="zA4-il-Mqo" customClass="EditBioViewController" customModule="PassingData" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditBioVC" id="zA4-il-Mqo" customClass="EditBioViewController" customModule="PassingData" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KOY-Xk-UGN">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

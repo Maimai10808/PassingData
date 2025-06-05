@@ -52,7 +52,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func eidtBioBUttonDidTouch(_ sender: Any) {
-        performSegue(withIdentifier: "editBioSegue", sender: nil)
+       let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let editBioVC = mainStoryboard.instantiateViewController(withIdentifier: "EditBioVC") as! EditBioViewController
+        editBioVC.placeholderText = currentBio
+        present(editBioVC, animated: true)
     }
     
 }

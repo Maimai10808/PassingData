@@ -15,8 +15,13 @@ class EditBioViewController: UIViewController {
     
     var placeholderText = "Placeholder"
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        bioTextView.layer.borderWidth = 0.5
+        bioTextView.layer.borderColor = UIColor.lightGray.cgColor
+        bioTextView.text = placeholderText
 
         // Do any additional setup after loading the view.
     }
@@ -49,6 +54,7 @@ extension EditBioViewController : UITextViewDelegate {
     func textViewDidEndEditing(_ textView: UITextView) {
         if textView.text.count == 0 {
             textView.textColor = UIColor.lightGray
+            textView.text = placeholderText
         }
     }
     
